@@ -27,9 +27,9 @@ while not done:
     minute = time.minute
     second = time.second
     blitRotateCenter(screen, leftHand, (140, 340), ((second % 60) / 60) * -360)
-    blitRotateCenter(screen, rightHand, (205, 325), ((minute % 60) / 60) * -(360 -190))
+    blitRotateCenter(screen, rightHand, (205, 325), ((minute % 60) / 60) * -(360 -120))
     
-    pygame.display.flip()
+    pygame.display.update()
 clock.tick(60)
     
     
